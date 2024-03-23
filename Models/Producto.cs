@@ -7,16 +7,16 @@ namespace TechStore.Models
 {
     public class Producto
     {
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public decimal Precio { get; set; }
         public decimal IGV { get; set; }
 
         public decimal CalculatedIGV
         {
             get
             {
-                return Price * IGV;
+                return Precio * IGV;
             }
         }
     }
